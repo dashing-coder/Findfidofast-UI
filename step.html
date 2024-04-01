@@ -306,10 +306,17 @@
                                                 <span class="label-bot-validate">Dog name is required</span>
                                             </div>
                                             <div class="mb-4" style="text-align: left;">
-                                                <label for="exampleFormControlInput1" class="form-label">Your Dog is a</label>
-                                                <button type="button" class="btn btn-outline-secondary btn-female">Female</button>
-                                                <button type="button" class="btn btn-outline-secondary btn-male active">Male</button>
-                                                <button type="button" class="btn btn-outline-secondary btn-unknown">Unknown</button>
+                                                <label for="exampleFormControlInput1" class="form-label">Your Dog is a</label>                                            
+                                                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                                                    <label class="btn btn-outline-secondary btn-female" for="btnradio1">Female</label>
+                                                  
+                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked>
+                                                    <label class="btn btn-outline-secondary btn-male active" for="btnradio2">Male</label>
+                                                  
+                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                                    <label class="btn btn-outline-secondary btn-unknown" for="btnradio3">Unknown</label>
+                                                  </div>
                                             </div>
                                         </div>                                        
                                     </div>
