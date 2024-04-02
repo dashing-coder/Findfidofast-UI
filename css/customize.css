@@ -1286,6 +1286,7 @@ ul.content-hr {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
 .step-page .btn-group>.btn {
     border-radius: 5px !important;
 }
@@ -1531,6 +1532,104 @@ ul.content-hr {
 .payment-option .subtotal {
     font-family: 'nunito_sansbold';
     color: #0082f0;
+}
+
+/* ====================
+    Payment Success
+==================== */
+.payment-success {
+    width: 100%;
+    padding: 30px 0 0 0;
+    overflow: hidden;
+    border-top: 1px solid #bec1c4;
+}
+
+.payment-success-content {
+    width: 70%;
+    padding: 50px 70px 70px 70px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border: 1px solid #bec1c4;
+    background: #fff;
+}
+
+.payment-success-content h4 {
+    margin-bottom: 30px;
+    line-height: 34px;
+    font-family: 'nunito_sansextrabold';
+    font-size: 30px;
+    text-align: center;
+    color: #17b366;
+}
+
+.payment-success-content .table {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.payment-success-content .table>tbody {
+    width: 100%;
+    padding: 50px 0 0 0;
+    display: block;
+}
+
+.payment-success-content .table>tbody>tr {
+    width: 100%;
+    display: flex;
+}
+
+.payment-success-content table td {
+    width: 50%;
+    line-height: 22px;
+    font-size: 16px;
+    font-family: 'nunito_sansregular';
+    text-align: left;
+    color: #595e6a;
+    border: none;
+}
+
+.payment-success-content table tr:first-child td {
+    font-family: 'nunito_sansextrabold';
+}
+
+.payment-success-content .btn-group .btn-primary {
+    padding: 15px 50px;
+    margin: 20px 5px 0 5px;
+    line-height: 24px;
+    font-family: 'nunito_sansbold';
+    font-size: 18px;
+    color: #fff;
+}
+
+.payment-success-content .btn-group .print {
+    border: 1px solid #2ea6d6;
+    background: #2ea6d6;
+}
+.payment-success-content .btn-group .print:hover {
+    border: 1px solid #0082f0;
+    background: #0082f0;
+}
+
+.payment-success-content .btn-group .close {
+    border: 1px solid #0082f0;
+    background: #0082f0;
+}
+.payment-success-content .btn-group .close:hover {
+    border: 1px solid #2ea6d6;
+    background: #2ea6d6;
+}
+
+.payment-success-content .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.payment-success-content .btn-group>:not(.btn-check)+.btn {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 /* ====================
@@ -1789,6 +1888,10 @@ ul.content-hr {
         width: 50%;
     }
 
+    .payment-success-content {
+        width: 90%;
+    }
+
     .footer-top {
         padding: 40px 0;
     }
@@ -1796,8 +1899,6 @@ ul.content-hr {
     .footer-text p {
         padding: 30px 0;
     }
-
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -1865,6 +1966,15 @@ ul.content-hr {
     .payment-option {
         margin: 10px;
         padding: 10px 0;
+    }
+
+    .payment-success-content .table {
+        width: 100%;
+    }
+
+    .payment-success-content {
+        width: 100%;
+        padding: 30px 20px;
     }
 
     .footer-top-text ul li {
@@ -2036,7 +2146,6 @@ ul.content-hr {
         line-height: 10px;
         font-size: 10px;
     }
-
 
     .footer-top-text ul li:nth-child(2) {
         margin: 0 20px;
