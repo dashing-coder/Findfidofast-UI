@@ -1416,28 +1416,6 @@ ul.content-hr {
     font-family: 'nunito_sansextrabold';
 }
 
-.multiple-photo {
-    width: 30%;
-    padding: 15px 20px 10px 20px;
-    overflow: hidden;
-    text-align: center;
-    margin: 0 auto 30px;
-    border-radius: 6px;
-    background: #eaeff3;
-}
-
-.multiple-photo label {
-    line-height: 22px;
-    font-size: 18px;
-    font-family: 'nunito_sansregular';
-    text-align: left;
-    color: #454c55;
-}
-
-.multiple-photo label span.extra {
-    color: #0082f0;
-}
-
 .card-info {
     margin-bottom: 30px;
 }
@@ -1938,7 +1916,7 @@ ul.content-hr {
     }
 
     .form-step p.plan {
-        padding: 20px 70px 40px 10px;
+        padding: 20px 50px 40px 10px;
     }
 
     .selected-plan {
@@ -1946,12 +1924,16 @@ ul.content-hr {
         padding: 20px 30px;
     }
 
-    .multiple-photo {
-        width: 50%;
+    .drop-container {
+        width: 100% !important;
     }
 
     .payment-success-content {
         width: 90%;
+    }
+
+    .step-page label {
+        font-size: 20px;
     }
 
     .footer-top {
@@ -2016,9 +1998,31 @@ ul.content-hr {
         padding-left: 0;
         font-size: 20px;
     }
+    
+    .step-page {
+        padding: 30px 0;
+    }
 
-    .multiple-photo {
-        width: 85%;
+    .step-page .btn-female {
+        padding: 15px 10px 0 40px;
+        background: url(../images/icon-female.png) no-repeat 5px 10px;
+    }
+    .step-page .btn-male {
+        padding: 17px 10px 10px 45px;
+    }
+
+    .step-page .btn-unknown {
+        padding: 15px 23px 10px 42px;
+        background: url(../images/icon-unknown.png) no-repeat 10px 14px;
+    }
+
+    .btn-group .btn-check:checked+.btn {
+        background: #fff url(../images/icon-male-active.png) no-repeat 5px 15px;
+    }
+    
+
+    .step-page label {
+        line-height: 20px;
     }
 
     .form-step .form-left-right {
