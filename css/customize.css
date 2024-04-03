@@ -1416,6 +1416,28 @@ ul.content-hr {
     font-family: 'nunito_sansextrabold';
 }
 
+.multiple-photo {
+    width: 30%;
+    padding: 15px 20px 10px 20px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto 30px;
+    border-radius: 6px;
+    background: #eaeff3;
+}
+
+.multiple-photo label {
+    line-height: 22px;
+    font-size: 18px;
+    font-family: 'nunito_sansregular';
+    text-align: left;
+    color: #454c55;
+}
+
+.multiple-photo label span.extra {
+    color: #0082f0;
+}
+
 .card-info {
     margin-bottom: 30px;
 }
