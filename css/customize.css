@@ -771,14 +771,13 @@ ul.content-hr {
 
 .signup {
     width: 100%;
-    padding: 60px 0 50px 0;
-    background: url("../images/bg-signup.jpg") no-repeat top center;
-    background-size: cover;
+    padding: 45px 0 100px 0;
+    background: #edf2f6;
 }
 
 .signup-form {
     width: 50%;
-    padding: 40px 60px 20px 60px;
+    padding: 40px 90px 20px 90px;
     text-align: center;
     overflow: hidden;
     margin: 0 auto;
@@ -789,11 +788,11 @@ ul.content-hr {
 .signInSignUpModal .signup-form h4 {
     padding: 0 0 20px 0;
     line-height: 60px;
-    font-size: 56px;
+    font-size: 48px;
     font-family: 'robotomedium';
     text-align: center;
     text-transform: uppercase;
-    color: #000;
+    color: #101c1d;
     border-bottom: 2px solid #007ae2;
 }
 
@@ -801,7 +800,7 @@ ul.content-hr {
     padding: 20px 0 0 0;
     line-height: 26px;
     font-family: 'Heebo';
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
     color: #333740;
 }
