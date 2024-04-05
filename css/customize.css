@@ -1862,6 +1862,103 @@ ul.content-hr {
 .lost-detail-right .contact-info li a:hover {
     text-decoration: none;
 }
+/* =========================
+    Lost Dog List Page
+========================= */
+.lost-dog-list-content {
+    width: 100%;
+    padding: 50px 0 50px 0;
+    overflow: hidden;
+}
+.lost-dog-list-left {
+    width: 100%;
+    overflow: hidden;
+}
+.lost-dog-list-right {
+    width: 100%;
+    overflow: hidden;
+}
+.lost-dog-list-right img {
+    border-radius: 10px;
+}
+.lost-dog-list-right h4 {
+    padding: 15px 0 0 0;
+    margin: 0;
+    line-height: 24px;
+    font-family: 'nunito_sansbold';
+    font-size: 18px;
+    text-align: left;
+    color: #032763;
+}
+.lost-dog-list-right h4 a {
+    text-decoration: none;
+    color: #032763;
+}
+.lost-dog-list-right h4 a:hover {
+    text-decoration: none;
+    color: #032763;
+}
+.lost-dog-list-right p {
+    padding: 5px 0 0 0;
+    margin: 0;
+    display: inline-block;
+    line-height: 22px;
+    font-family: 'nunito_sansregular';
+    font-size: 14px;
+    text-transform: capitalize;
+    text-align: left;
+    color: #5e656f;
+}
+.lost-dog-list-right ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.lost-dog-list-right ul li {
+    margin: 0 0 0 30px;
+    padding: 0;
+    line-height: 22px;
+    font-family: 'nunito_sansregular';
+    font-size: 14px;
+    text-transform: capitalize;
+    text-align: left;
+    color: #5e656f;
+}
+.lost-dog-list-right ul li::marker {
+    font-size: 25px;
+    color: #b9dbf8;
+}
+.lost-dog-list-right-text {
+    width: 100%;
+    padding: 15px 5px;
+    overflow: hidden;
+}
+.dog-pagination {
+    width: 100%;
+    padding: 40px 0;
+    margin: 40px 0 0 0;
+    overflow: hidden;
+    text-align: center;
+    border-top: 2px solid #f1f2f2;
+}
+.dog-pagination ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+.dog-pagination ul li {
+    padding: 0 5px;
+    margin: 0;
+    display: inline-block;
+}
+.dog-pagination ul li a {
+    line-height: 22px;
+    font-family: 'nunito_sansbold';
+    font-size: 16px;
+    color: #032763;
+    border: 0;
+}
 /* ====================
     Media Query 
 ==================== */
