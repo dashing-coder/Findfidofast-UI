@@ -623,7 +623,7 @@ ul.content-hr {
 .side-bar .menu .item a .dropdown {
     position: absolute;
     right: 0;
-    margin: 20px;
+    margin: 8px 20px 10px 10px;
     transition: 0.3s ease;
 }
 
@@ -1742,7 +1742,7 @@ ul.content-hr {
     font-size: 30px;
     color: #454c55;
 }
-.lost-detail-right p {
+.lost-detail-right h5 {
     padding: 10px 0 0 0;
     margin: 0;
     line-height: 22px;
@@ -1781,7 +1781,7 @@ ul.content-hr {
 .lost-detail-right table {
     width: 100%;
     overflow: hidden;
-    margin: 30px 0 0 0;
+    margin: 30px 0 20px 0;
 }
 .lost-detail-right table td {
     padding: 10px 0;
@@ -1798,7 +1798,7 @@ ul.content-hr {
     text-align: right;
     color: #000;
 }
-.lost-detail-right h5 {
+.lost-detail-right h6 {
     padding: 13px 0 13px 0;
     margin: 60px 0 0 0;
     line-height: 24px;
@@ -1809,12 +1809,54 @@ ul.content-hr {
     border-bottom: 1px solid #e7e7e7;
     background: url("../images/icon-listing.png") no-repeat 39% 18px;
 }
-.lost-detail-right h5 a {
+.lost-detail-right h6 a {
     color: #0082f0;
     text-decoration: none;
 }
-.lost-detail-right h5 a:hover {
+.lost-detail-right h6 a:hover {
     color: #0082f0;
+    text-decoration: none;
+}
+.lost-detail-right p {
+    padding: 10px 0;
+    line-height: 22px;
+    text-align: left;
+    font-family: 'nunito_sansregular';
+    font-size: 16px;
+    color: #000;
+}
+.lost-detail-right .contact-info {
+    width: 100%;
+    padding: 10px 0 0px 0;
+    overflow: hidden;
+}
+.lost-detail-right .contact-info li {
+    width: 100%;
+    padding: 10px 0 10px 30px;
+    margin: 0;
+    line-height: 22px;
+    text-align: left;
+    font-family: 'nunito_sansregular';
+    font-size: 16px;
+    color: #000;
+    list-style-type: none;
+    background: none;
+}
+.lost-detail-right .contact-info li:nth-child(1) {
+    background: url("../images/icon-call.png") no-repeat left center;
+}
+.lost-detail-right .contact-info li:nth-child(2) {
+    background: url("../images/icon-mail.png") no-repeat left center;
+}
+.lost-detail-right .contact-info li:nth-child(3) {
+    background: url("../images/icon-location.png") no-repeat left center;
+}
+.lost-detail-right .contact-info li a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid #b0b0b0;
+}
+.lost-detail-right .contact-info li a:hover {
     text-decoration: none;
 }
 /* ====================
@@ -2090,7 +2132,7 @@ ul.content-hr {
         padding: 30px 0 20px 0;
     }
 
-    .lost-detail-right h5 {
+    .lost-detail-right h6 {
         margin: 30px 0 0 0;
         background: url(../images/icon-listing.png) no-repeat 20% 18px;
     }
@@ -2222,12 +2264,17 @@ ul.content-hr {
         padding: 30px 10px 0 10px;
     }
 
-    .lost-detail-right p {
-        padding: 10px 0 0 10px;
+    .lost-detail-right h5 {
+        padding: 10px 0 0 0;
     }
 
     .lost-detail-right table {
         margin: 30px 10px 0 0;
+    }
+
+    .page-header-text h4 {
+        line-height: 40px;
+        font-size: 35px;
     }
 
     .footer-top-text ul li {
