@@ -2424,6 +2424,9 @@ ul.content-hr {
     .lost-detail-content {
         padding: 30px 0 50px 0;
     }
+    .lost-dog-list-right {
+        padding: 0;
+    }
 
     .footer-top {
         padding: 40px 0;
