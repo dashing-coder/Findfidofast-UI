@@ -1872,10 +1872,194 @@ ul.content-hr {
 }
 .lost-dog-list-left {
     width: 100%;
+    padding: 20px 0 0 0;
     overflow: hidden;
+}
+.lost-dog-list-left h4 {
+    padding: 0 0 15px 0;
+    text-align: left;
+    line-height: 24px;
+    font-family: 'nunito_sansbold';
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+    border-bottom: 1px solid #e6e6e6;
+}
+.lost-dog-list-left h4 span {
+    float: right;
+}
+.lost-dog-list-left h4 span a {
+    text-decoration: none;
+    color: #484848;
+}
+.lost-dog-list-left h4 span a:hover {
+    text-decoration: none;
+    color: #484848;
+}
+.lost-dog-list-left h5 {
+    padding: 20px 0 15px 0;
+    line-height: 24px;
+    font-family: 'nunito_sansbold';
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+}
+.location-left {
+    width: 100%;
+    padding: 15px 10px;
+    margin: 0 0 15px 0;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid #4e4e50;
+}
+.location-left p {
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+    font-family: 'nunito_sansregular';
+    font-size: 13px;
+    text-align: left;
+    color: #6e6e6e;
+}
+.location-left h5 {
+    padding: 0;
+    text-align: left;
+    line-height: 24px;
+    font-family: 'nunito_sansbold';
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+}
+.current-location {
+    width: 100%;
+    padding: 0 0 10px 10px;
+    overflow: hidden;
+}
+.current-location p {
+    padding: 0 0 5px 20px;
+    margin: 0;
+    line-height: 20px;
+    font-family: 'nunito_sansregular';
+    font-size: 14px;
+    text-align: left;
+    color: #000;
+    background: url("../images/icon-loc.png") no-repeat left top;
+}
+.current-location p a {
+    text-decoration: underline;
+    color: #000;
+}
+.current-location p a:hover {
+    text-decoration: none;
+    color: #000;
+}
+.search-radius {
+    width: 100%;
+    padding: 20px 0 30px 0;
+    overflow: hidden;
+}
+.search-radius .form-label {
+    display: block;
+    text-align: left;
+    line-height: 24px;
+    font-family: 'nunito_sansbold';
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+}
+.search-radius .form-control-range {
+    width: 100%;
+    display: block;
+}
+.search-radius #rangeval {
+    line-height: 20px;
+    font-family: 'nunito_sansregular';
+    font-size: 15px;
+    text-align: left;
+    color: #000;
+}
+#formControlRange {
+    margin-bottom: 10px;
+    /*background: linear-gradient(to right, #0082f0 0%, #0082f0 50%, #bfe0fb 50%, #bfe0fb 100%);   
+    border: solid 0px #0082f0;
+    border-radius: 8px;
+    height: 7px;
+    width: 100%;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;*/
+  }
+.lost-dog-list-left .form-select {
+    padding: 10px 0;
+    border-top: 1px solid #e6e6e6;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;    
+    border-radius: 0;
+    text-align: left;
+    background-size: auto;
+    background-image: url("../images/icon-arrow-down.png")
+}
+.lost-dog-list-left option {
+    line-height: 24px;
+    font-family: 'nunito_sansbold';
+    font-size: 14px;
+    text-align: left;
+    color: #000;
+}
+.lost-dog-list-left select:not(:checked) {
+    line-height: 22px;
+    font-family: 'nunito_sansbold';
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+}
+.lost-dog-list-left input[type='range'] {
+    -webkit-appearance: none;
+    background-color: #bfe0fb;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 30px;
+}  
+.lost-dog-list-left input[type='range']::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 14px;
+}  
+.lost-dog-list-left input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #0082f0;
+    border-radius: 100%;
+    box-shadow: -210px 0 0 200px #4fa6ef;
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+    border: 0;
+}  
+.lost-dog-list-left input[type='range']::-moz-range-thumb {
+    background: #333;
+    border-radius: 50%;
+    box-shadow: -1010px 0 0 1000px #4fa6ef;
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+    border: 0;
+}  
+.lost-dog-list-left input[type="range"]::-moz-range-track {
+    background-color: #ddd;
+}
+.lost-dog-list-left input[type="range"]::-moz-range-progress {
+    background-color: #666;
+    height: 14px
+}
+.lost-dog-list-left input[type="range"]::-ms-fill-upper {
+    background-color: #ddd;
+}
+.lost-dog-list-left input[type="range"]::-ms-fill-lower {
+    background-color: #4fa6ef;
 }
 .lost-dog-list-right {
     width: 100%;
+    padding: 0 0 0 50px;
     overflow: hidden;
 }
 .lost-dog-list-right img {

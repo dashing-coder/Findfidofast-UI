@@ -233,107 +233,236 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="lost-dog-list-left">
-                            
+                            <form>
+                                <h4>Filters <span> <a href="#">Reset
+                                            Filters</a></span></h4>
+                                <h5>Location</h5>
+                                <div class="location-left">
+                                    <p>City or zip</p>
+                                    <h5>Plano, TX 75025, USA</h5>
+                                </div>
+                                <div class="current-location">
+                                    <p><a href="#">Use current location</a></p>
+                                </div>
+                                <div class="search-radius">
+                                    <label for="formControlRange"
+                                        class="form-label">Search Radius</label>
+                                    <input type="range"
+                                        class="form-control-range"
+                                        id="formControlRange"
+                                        onInput="$('#rangeval').html($(this).val())">
+                                    <span id="rangeval">50<!-- Default value -->
+                                    </span> Miles
+                                </div>
+                                <div class="myselect">
+                                    <select class="form-select"
+                                        aria-label="Default select example">
+                                        <option selected>Size</option>
+                                        <option value="s">S</option>
+                                        <option value="m">M</option>
+                                        <option value="l">L</option>
+                                        <option value="xl">XL</option>
+                                    </select>
+                                </div>
+                                <div class="myselect">
+                                    <select class="form-select"
+                                        aria-label="Default select example">
+                                        <option selected>Age</option>
+                                        <option value="s">S</option>
+                                        <option value="m">M</option>
+                                        <option value="l">L</option>
+                                        <option value="xl">XL</option>
+                                    </select>
+                                </div>
+                                <div class="myselect">
+                                    <select class="form-select"
+                                        aria-label="Default select example">
+                                        <option selected>Sex</option>
+                                        <option value="s">S</option>
+                                        <option value="m">M</option>
+                                        <option value="l">L</option>
+                                        <option value="xl">XL</option>
+                                    </select>
+                                </div>
+                                <div class="myselect">
+                                    <select class="form-select"
+                                        aria-label="Default select example">
+                                        <option selected>Bread</option>
+                                        <option value="s">S</option>
+                                        <option value="m">M</option>
+                                        <option value="l">L</option>
+                                        <option value="xl">XL</option>
+                                    </select>
+                                </div>
+                                <div class="myselect">
+                                    <select class="form-select"
+                                        aria-label="Default select example">
+                                        <option selected>Color</option>
+                                        <option value="s">S</option>
+                                        <option value="m">M</option>
+                                        <option value="l">L</option>
+                                        <option value="xl">XL</option>
+                                    </select>
+                                </div>
+
+                                <div class="top-donate text-center mt-4">
+                                    <a href="#">Apply Filters</a>
+                                </div>
+                            </form>
                         </div>
                     </div>
                     <div class="col-lg-9 col-md-7 col-12">
                         <div class="lost-dog-list-right">
-                           <div class="row">
+                            <div class="row">
                                 <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="lost-dog-list-right-text">                                        
-                                        <img class="img-fluid" src="images/lost-dog-list01.jpg" alt="Lost Dog" >
-                                        <h4><a href="#">Pomeranian Puppy</a></h4>
-                                        <p>Dallas - Texas:  <ul><li>Adult female</li></ul></p>
+                                    <div class="lost-dog-list-right-text">
+                                        <img class="img-fluid"
+                                            src="images/lost-dog-list01.jpg"
+                                            alt="Lost Dog">
+                                        <h4><a href="#">Pomeranian
+                                                Puppy</a></h4>
+                                        <p>Dallas - Texas: <ul><li>Adult
+                                                    female</li></ul></p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="lost-dog-list-right-text">                                        
-                                        <img class="img-fluid" src="images/lost-dog-list02.jpg" alt="Lost Dog" >
+                                    <div class="lost-dog-list-right-text">
+                                        <img class="img-fluid"
+                                            src="images/lost-dog-list02.jpg"
+                                            alt="Lost Dog">
                                         <h4><a href="#">Papillon</a></h4>
-                                        <p>Dallas - Texas:  <ul><li>Adult Male</li></ul></p>
+                                        <p>Dallas - Texas: <ul><li>Adult
+                                                    Male</li></ul></p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="lost-dog-list-right-text">                                        
-                                        <img class="img-fluid" src="images/lost-dog-list03.jpg" alt="Lost Dog" >
+                                    <div class="lost-dog-list-right-text">
+                                        <img class="img-fluid"
+                                            src="images/lost-dog-list03.jpg"
+                                            alt="Lost Dog">
                                         <h4><a href="#">Toy Poodle</a></h4>
-                                        <p>Dallas - Texas:  <ul><li>Adult female</li></ul></p>
+                                        <p>Dallas - Texas: <ul><li>Adult
+                                                    female</li></ul></p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="lost-dog-list-right-text">                                        
-                                        <img class="img-fluid" src="images/lost-dog-list04.jpg" alt="Lost Dog" >
+                                    <div class="lost-dog-list-right-text">
+                                        <img class="img-fluid"
+                                            src="images/lost-dog-list04.jpg"
+                                            alt="Lost Dog">
                                         <h4><a href="#">Chihuahua Puppy</a></h4>
-                                        <p>Dallas - Texas:  <ul><li>Adult female</li></ul></p>
+                                        <p>Dallas - Texas: <ul><li>Adult
+                                                    female</li></ul></p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="lost-dog-list-right-text">                                        
-                                        <img class="img-fluid" src="images/lost-dog-list05.jpg" alt="Lost Dog" >
+                                    <div class="lost-dog-list-right-text">
+                                        <img class="img-fluid"
+                                            src="images/lost-dog-list05.jpg"
+                                            alt="Lost Dog">
                                         <h4><a href="#">Affenpinscher</a></h4>
-                                        <p>Dallas - Texas:  <ul><li>Adult female</li></ul></p>
+                                        <p>Dallas - Texas: <ul><li>Adult
+                                                    female</li></ul></p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="lost-dog-list-right-text">                                        
-                                        <img class="img-fluid" src="images/lost-dog-list06.jpg" alt="Lost Dog" >
-                                        <h4><a href="#">Yorkshire Terrier</a></h4>
-                                        <p>Dallas - Texas:  <ul><li>Adult female</li></ul></p>
+                                    <div class="lost-dog-list-right-text">
+                                        <img class="img-fluid"
+                                            src="images/lost-dog-list06.jpg"
+                                            alt="Lost Dog">
+                                        <h4><a href="#">Yorkshire
+                                                Terrier</a></h4>
+                                        <p>Dallas - Texas: <ul><li>Adult
+                                                    female</li></ul></p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="lost-dog-list-right-text">                                        
-                                        <img class="img-fluid" src="images/lost-dog-list07.jpg" alt="Lost Dog" >
+                                    <div class="lost-dog-list-right-text">
+                                        <img class="img-fluid"
+                                            src="images/lost-dog-list07.jpg"
+                                            alt="Lost Dog">
                                         <h4><a href="#">Chin Chin</a></h4>
-                                        <p>Dallas - Texas:  <ul><li>Adult female</li></ul></p>
+                                        <p>Dallas - Texas: <ul><li>Adult
+                                                    female</li></ul></p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="lost-dog-list-right-text">                                        
-                                        <img class="img-fluid" src="images/lost-dog-list08.jpg" alt="Lost Dog" >
+                                    <div class="lost-dog-list-right-text">
+                                        <img class="img-fluid"
+                                            src="images/lost-dog-list08.jpg"
+                                            alt="Lost Dog">
                                         <h4><a href="#">Cuty Terrier</a></h4>
-                                        <p>Dallas - Texas:  <ul><li>Adult female</li></ul></p>
+                                        <p>Dallas - Texas: <ul><li>Adult
+                                                    female</li></ul></p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="lost-dog-list-right-text">                                        
-                                        <img class="img-fluid" src="images/lost-dog-list09.jpg" alt="Lost Dog" >
+                                    <div class="lost-dog-list-right-text">
+                                        <img class="img-fluid"
+                                            src="images/lost-dog-list09.jpg"
+                                            alt="Lost Dog">
                                         <h4><a href="#">Shih Tzu</a></h4>
-                                        <p>Dallas - Texas:  <ul><li>Adult female</li></ul></p>
+                                        <p>Dallas - Texas: <ul><li>Adult
+                                                    female</li></ul></p>
                                     </div>
-                                </div>
-                           </div>
-                           <div class="row">
-                            <div class="col-lg-12 col-md-12 col-12">
-                                <div class="dog-pagination">
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination">
-                                          <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Previous">
-                                              <span aria-hidden="true">&laquo;</span>
-                                            </a>
-                                          </li>
-                                          <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                          <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                          <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                          <li class="page-item"><a class="page-link" href="#">6</a></li>
-                                          <li class="page-item"><a class="page-link" href="#">7</a></li>
-                                          <li class="page-item"><a class="page-link" href="#">8</a></li>
-                                          <li class="page-item"><a class="page-link" href="#">9</a></li>
-                                          <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Next">
-                                              <span aria-hidden="true">&raquo;</span>
-                                            </a>
-                                          </li>
-                                        </ul>
-                                      </nav>
                                 </div>
                             </div>
-                           </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-12">
+                                    <div class="dog-pagination">
+                                        <nav
+                                            aria-label="Page navigation example">
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a class="page-link"
+                                                        href="#"
+                                                        aria-label="Previous">
+                                                        <span
+                                                            aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a
+                                                        class="page-link"
+                                                        href="#">1</a></li>
+                                                <li class="page-item"><a
+                                                        class="page-link"
+                                                        href="#">2</a></li>
+                                                <li class="page-item"><a
+                                                        class="page-link"
+                                                        href="#">3</a></li>
+                                                <li class="page-item"><a
+                                                        class="page-link"
+                                                        href="#">4</a></li>
+                                                <li class="page-item"><a
+                                                        class="page-link"
+                                                        href="#">5</a></li>
+                                                <li class="page-item"><a
+                                                        class="page-link"
+                                                        href="#">6</a></li>
+                                                <li class="page-item"><a
+                                                        class="page-link"
+                                                        href="#">7</a></li>
+                                                <li class="page-item"><a
+                                                        class="page-link"
+                                                        href="#">8</a></li>
+                                                <li class="page-item"><a
+                                                        class="page-link"
+                                                        href="#">9</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link"
+                                                        href="#"
+                                                        aria-label="Next">
+                                                        <span
+                                                            aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>              
+                    </div>
                 </div>
             </div>
         </section>
@@ -401,7 +530,7 @@
                 $('.menu-btn').css("visibility", "visible");
             });
             });
-        </script>       
+        </script>
 
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
