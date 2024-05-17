@@ -1693,7 +1693,7 @@ ul.content-hr {
     border-bottom-left-radius: 5px;
 }
 /* ====================
-    Lost Deatils Page
+    Lost Details Page
 ==================== */
 .lost-detail-content {
     width: 100%;
@@ -1905,6 +1905,26 @@ ul.content-hr {
     text-align: left;
     color: #000;
 }
+.form-floating>.form-control {
+    padding: 40px 10px 25px 10px !important;
+    margin: 0 0 15px 0;
+    overflow: hidden;
+    line-height: 24px;
+    font-family: 'nunito_sansbold';
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+    border-radius: 5px;
+    border: 1px solid #4e4e50;
+}
+.form-floating>label {
+    top: 6px;
+    line-height: 20px;
+    font-family: 'nunito_sansregular';
+    font-size: 13px;
+    text-align: left;
+    color: #6e6e6e;
+}
 .location-left {
     width: 100%;
     padding: 15px 10px;
@@ -1991,7 +2011,7 @@ ul.content-hr {
     -webkit-appearance: none;*/
   }
 .lost-dog-list-left .form-select {
-    padding: 10px 0;
+    padding: 10px;
     border-top: 1px solid #e6e6e6;
     border-right: 0;
     border-bottom: 0;
@@ -2763,4 +2783,15 @@ ul.content-hr {
         line-height: 25px;
     }
 
+}
+
+.select2-container .select2-selection--single{
+    height:41px !important;
+}
+.select2-container--default .select2-selection--single{
+    border-top: 1px solid #e6e6e6;
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+    border-left: 0 !important;
+    border-radius: 0 !important; 
 }
