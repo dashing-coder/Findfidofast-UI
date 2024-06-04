@@ -147,7 +147,7 @@ ul {
     position: relative;
     justify-content: center;
     align-items: center;
-    padding: 18px 0 5px 0;
+    padding: 18px 200px 5px 200px;
 }
 
 .top-menu {
@@ -174,7 +174,7 @@ ul {
     font-size: 13px;
     text-decoration: none;
     color: #5d5d5d;
-    border-right: 1px solid #5d5d5d;
+    border-right: 1px solid #aaa4a4;
 }
 
 .top-menu ul li:last-child a {
@@ -274,12 +274,14 @@ ul {
     width: 100%;
     padding: 20px 0;
     text-align: center;
+    display: ruby-text;
 }
 
 .main-menu ul {
     width: 100%;
     padding: 0;
     margin: 0;
+    margin: 0 auto;
 }
 
 .main-menu ul li {
@@ -294,7 +296,7 @@ ul {
     font-family: 'nunito_sanssemibold';
     font-size: 17px;
     text-decoration: none;
-    color: #0b0804;
+    color: #10141d;
 }
 
 .main-menu ul li a:hover {
@@ -513,21 +515,39 @@ ul.content-hr {
 
 .challenge {
     width: 100%;
-    padding: 50px 0 80px 0;
-    margin: 60px 0;
+    /* padding: 50px 0 80px 0; */
+    /*margin: 60px 0;*/
     overflow: hidden;
     text-align: center;
-    background: #f2f9fe;
+    background: #f2f9fe;    
+
+    /* --mask:
+    radial-gradient(67.08px at 50% 90px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 51% repeat-x,
+    radial-gradient(67.08px at 50% -60px,#0000 99%,#000 101%) 50% 30px/120px calc(51% - 30px) repeat-x,
+    radial-gradient(67.08px at 50% calc(100% - 90px),#000 99%,#0000 101%) calc(50% - 60px) 100%/120px 51% repeat-x,
+    radial-gradient(67.08px at 50% calc(100% + 60px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px calc(51% - 30px) repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask); */
 }
 
 .challenge h4 {
-    padding: 0 0 5px 0;
+    /* padding: 40px 0 0 0; */
     line-height: 26px;
     font-family: 'nunito_sansregular';
     font-weight: normal;
     font-size: 20px;
     text-align: center;
     display: inline-block;
+}
+
+.challenge p {
+    padding: 40px 0 0 0;
+    line-height: 30px;
+    font-family: 'nunito_sansregular';
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    color: #0e1b28;
 }
 
 .challenge h3 {
@@ -541,7 +561,7 @@ ul.content-hr {
 }
 
 .challenge-content {
-    width: 70%;
+    width: 100%;
     padding: 50px 0 0 0;
     overflow: hidden;
     margin: 0 auto;
@@ -549,12 +569,17 @@ ul.content-hr {
 
 .challenge-box {
     width: 100%;
+    padding: 20px;
     overflow: hidden;
     text-align: center;
+    min-height: 320px;
+    border-radius: 8px;
+    border: 1px solid #d4dbe0;
+    background: #f5fbfe;
 }
 
 .challenge-box h5 {
-    padding: 30px 0 0 0;
+    padding: 20px 0 0 0;
     line-height: 30px;
     font-family: 'nunito_sanssemibold';
     font-weight: 600;
@@ -563,16 +588,31 @@ ul.content-hr {
     color: #0e1b28;
 }
 
-.challenge-box p {
-    padding: 6px 0 0 0;
-    line-height: 20px;
+.challenge-box ul {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 20px 0 0 0;
+    text-align: left;
+}
+
+.challenge-box ul li {
+    margin: 0 0 5px 0;
+    line-height: 23px;
     font-family: 'nunito_sansregular';
-    font-weight: normal;
-    font-size: 16px;
-    text-align: center;
+    font-size: 15px;
+    list-style-type: none;
     color: #0e1b28;
 }
 
+.challenge-box ul li::marker {
+    color: #5a6570;
+}
+
+.challenge-box ul li::before {
+    content: "• ";
+    color: #5a6570;
+}
 
 .side-bar {
     background: rgb(57 104 221);
@@ -657,7 +697,7 @@ ul.content-hr {
     cursor: pointer;
     border-radius: 10px;
     right: 0;
-    top: -10px;
+    top: 5px;
 }
 
 .menu-btn {
@@ -748,7 +788,7 @@ ul.content-hr {
 .footer-text p {
     padding: 40px 0;
     margin: 0;
-    line-height: 20px;
+    line-height: 22px;
     font-family: 'montserratmedium';
     font-size: 16px;
     text-align: center;
@@ -1549,28 +1589,28 @@ ul.content-hr {
     color: #444;
     cursor: pointer;
     transition: background .2s ease-in-out, border .2s ease-in-out;
-  }
-  
-  .drop-container:hover,
-  .drop-container.drag-active {
+}
+
+.drop-container:hover,
+.drop-container.drag-active {
     background: #eee;
     border-color: #111;
-  }
-  
-  .drop-container:hover .drop-title,
-  .drop-container.drag-active .drop-title {
+}
+
+.drop-container:hover .drop-title,
+.drop-container.drag-active .drop-title {
     color: #222;
-  }
-  
-  .drop-container .drop-title {
+}
+
+.drop-container .drop-title {
     color: #444;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
     transition: color .2s ease-in-out;
-  }
-  
-  .drop-container input[type=file] {
+}
+
+.drop-container input[type=file] {
     width: 370px;
     max-width: 100%;
     color: #444;
@@ -1578,9 +1618,9 @@ ul.content-hr {
     background: #fff;
     border-radius: 10px;
     border: 1px solid #555;
-  }
-  
-  .drop-container input[type=file]::file-selector-button {
+}
+
+.drop-container input[type=file]::file-selector-button {
     margin-right: 20px;
     border: none;
     background: #084cdf;
@@ -1589,11 +1629,11 @@ ul.content-hr {
     color: #fff;
     cursor: pointer;
     transition: background .2s ease-in-out;
-  }
-  
-  .drop-container input[type=file]::file-selector-button:hover {
+}
+
+.drop-container input[type=file]::file-selector-button:hover {
     background: #0d45a5;
-  }
+}
 
 /* ====================
     Payment Success
@@ -1669,6 +1709,7 @@ ul.content-hr {
     border: 1px solid #2ea6d6;
     background: #2ea6d6;
 }
+
 .payment-success-content .btn-group .print:hover {
     border: 1px solid #0082f0;
     background: #0082f0;
@@ -1678,6 +1719,7 @@ ul.content-hr {
     border: 1px solid #0082f0;
     background: #0082f0;
 }
+
 .payment-success-content .btn-group .close:hover {
     border: 1px solid #2ea6d6;
     background: #2ea6d6;
@@ -1692,6 +1734,7 @@ ul.content-hr {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
+
 /* ====================
     Lost Details Page
 ==================== */
@@ -1700,11 +1743,13 @@ ul.content-hr {
     padding: 70px 0 150px 0;
     overflow: hidden;
 }
+
 .lost-detail-left {
     width: 100%;
     overflow: hidden;
     text-align: center;
 }
+
 .lost-detail-left p {
     padding: 0;
     margin: 20px 0 0 0;
@@ -1714,6 +1759,7 @@ ul.content-hr {
     font-size: 16px;
     color: #000;
 }
+
 .lost-detail-left .btn-dog-parent {
     padding: 10px 25px;
     line-height: 22px;
@@ -1724,17 +1770,21 @@ ul.content-hr {
     border-radius: 100px;
     background: #0082f0;
 }
+
 .lost-detail-left .btn-dog-parent:hover {
     background: #1C3786;
 }
+
 .lost-detail-left img {
     border-radius: 10px;
 }
+
 .lost-detail-right {
     width: 100%;
     padding-left: 20px;
     overflow: hidden;
 }
+
 .lost-detail-right h4 {
     padding: 0;
     margin: 0;
@@ -1745,6 +1795,7 @@ ul.content-hr {
     font-size: 30px;
     color: #454c55;
 }
+
 .lost-detail-right h5 {
     padding: 10px 0 0 0;
     margin: 0;
@@ -1754,11 +1805,13 @@ ul.content-hr {
     text-align: left;
     color: #000;
 }
+
 .lost-detail-right ul {
     width: 100%;
     padding: 30px 0 40px 0;
     overflow: hidden;
 }
+
 .lost-detail-right ul li {
     width: 30%;
     padding: 15px 20px;
@@ -1773,6 +1826,7 @@ ul.content-hr {
     border-radius: 8px;
     background: #f1f9ff;
 }
+
 .lost-detail-right ul li span {
     padding: 10px 0 0 0;
     display: block;
@@ -1781,11 +1835,13 @@ ul.content-hr {
     text-transform: uppercase;
     color: #0082f0;
 }
+
 .lost-detail-right table {
     width: 100%;
     overflow: hidden;
     margin: 30px 0 20px 0;
 }
+
 .lost-detail-right table td {
     padding: 10px 0;
     line-height: 18px;
@@ -1795,12 +1851,14 @@ ul.content-hr {
     color: #767676;
     border-color: #e7e7e7;
 }
+
 .lost-detail-right table td:last-child {
     font-family: 'nunito_sansbold';
     font-size: 16px;
     text-align: right;
     color: #000;
 }
+
 .lost-detail-right h6 {
     padding: 13px 0 13px 0;
     margin: 60px 0 0 0;
@@ -1813,14 +1871,17 @@ ul.content-hr {
     border-bottom: 1px solid #e7e7e7;
     background: url("../images/icon-listing.png") no-repeat 37% 16px;
 }
+
 .lost-detail-right h6 a {
     color: #0082f0;
     text-decoration: none;
 }
+
 .lost-detail-right h6 a:hover {
     color: #0082f0;
     text-decoration: none;
 }
+
 .lost-detail-right p {
     padding: 10px 0;
     line-height: 22px;
@@ -1829,11 +1890,13 @@ ul.content-hr {
     font-size: 16px;
     color: #000;
 }
+
 .lost-detail-right .contact-info {
     width: 100%;
     padding: 10px 0 0px 0;
     overflow: hidden;
 }
+
 .lost-detail-right .contact-info li {
     width: 100%;
     padding: 10px 0 10px 30px;
@@ -1846,23 +1909,29 @@ ul.content-hr {
     list-style-type: none;
     background: none;
 }
+
 .lost-detail-right .contact-info li:nth-child(1) {
     background: url("../images/icon-call.png") no-repeat left center;
 }
+
 .lost-detail-right .contact-info li:nth-child(2) {
     background: url("../images/icon-mail.png") no-repeat left center;
 }
+
 .lost-detail-right .contact-info li:nth-child(3) {
     background: url("../images/icon-location.png") no-repeat left center;
 }
+
 .lost-detail-right .contact-info li a {
     text-decoration: none;
     color: #000;
     border-bottom: 2px solid #b0b0b0;
 }
+
 .lost-detail-right .contact-info li a:hover {
     text-decoration: none;
 }
+
 /* =========================
     Lost Dog List Page
 ========================= */
@@ -1871,11 +1940,13 @@ ul.content-hr {
     padding: 50px 0 50px 0;
     overflow: hidden;
 }
+
 .lost-dog-list-left {
     width: 100%;
     padding: 20px 0 0 0;
     overflow: hidden;
 }
+
 .lost-dog-list-left h4 {
     padding: 0 0 15px 0;
     text-align: left;
@@ -1886,17 +1957,21 @@ ul.content-hr {
     color: #000;
     border-bottom: 1px solid #e6e6e6;
 }
+
 .lost-dog-list-left h4 span {
     float: right;
 }
+
 .lost-dog-list-left h4 span a {
     text-decoration: none;
     color: #484848;
 }
+
 .lost-dog-list-left h4 span a:hover {
     text-decoration: none;
     color: #484848;
 }
+
 .lost-dog-list-left h5 {
     padding: 20px 0 15px 0;
     line-height: 24px;
@@ -1905,6 +1980,7 @@ ul.content-hr {
     text-align: left;
     color: #000;
 }
+
 .form-floating>.form-control {
     padding: 40px 10px 25px 10px !important;
     margin: 0 0 15px 0;
@@ -1917,6 +1993,7 @@ ul.content-hr {
     border-radius: 5px;
     border: 1px solid #4e4e50;
 }
+
 .form-floating>label {
     top: 6px;
     line-height: 20px;
@@ -1925,6 +2002,7 @@ ul.content-hr {
     text-align: left;
     color: #6e6e6e;
 }
+
 .location-left {
     width: 100%;
     padding: 15px 10px;
@@ -1933,6 +2011,7 @@ ul.content-hr {
     border-radius: 5px;
     border: 1px solid #4e4e50;
 }
+
 .location-left p {
     padding: 0;
     margin: 0;
@@ -1942,6 +2021,7 @@ ul.content-hr {
     text-align: left;
     color: #6e6e6e;
 }
+
 .location-left h5 {
     padding: 0;
     text-align: left;
@@ -1951,11 +2031,13 @@ ul.content-hr {
     text-align: left;
     color: #000;
 }
+
 .current-location {
     width: 100%;
     padding: 0 0 10px 10px;
     overflow: hidden;
 }
+
 .current-location p {
     padding: 0 0 5px 20px;
     margin: 0;
@@ -1966,19 +2048,23 @@ ul.content-hr {
     color: #000;
     background: url("../images/icon-loc.png") no-repeat left top;
 }
+
 .current-location p a {
     text-decoration: underline;
     color: #000;
 }
+
 .current-location p a:hover {
     text-decoration: none;
     color: #000;
 }
+
 .search-radius {
     width: 100%;
     padding: 20px 0 30px 0;
     overflow: hidden;
 }
+
 .search-radius .form-label {
     display: block;
     text-align: left;
@@ -1988,10 +2074,12 @@ ul.content-hr {
     text-align: left;
     color: #000;
 }
+
 .search-radius .form-control-range {
     width: 100%;
     display: block;
 }
+
 .search-radius #rangeval {
     line-height: 20px;
     font-family: 'nunito_sansregular';
@@ -1999,6 +2087,7 @@ ul.content-hr {
     text-align: left;
     color: #000;
 }
+
 #formControlRange {
     margin-bottom: 10px;
     /*background: linear-gradient(to right, #0082f0 0%, #0082f0 50%, #bfe0fb 50%, #bfe0fb 100%);   
@@ -2009,18 +2098,20 @@ ul.content-hr {
     outline: none;
     transition: background 450ms ease-in;
     -webkit-appearance: none;*/
-  }
+}
+
 .lost-dog-list-left .form-select {
     padding: 10px;
     border-top: 1px solid #e6e6e6;
     border-right: 0;
     border-bottom: 0;
-    border-left: 0;    
+    border-left: 0;
     border-radius: 0;
     text-align: left;
     background-size: auto;
     background-image: url("../images/icon-arrow-down.png")
 }
+
 .lost-dog-list-left option {
     line-height: 24px;
     font-family: 'nunito_sansbold';
@@ -2028,6 +2119,7 @@ ul.content-hr {
     text-align: left;
     color: #000;
 }
+
 .lost-dog-list-left select:not(:checked) {
     line-height: 22px;
     font-family: 'nunito_sansbold';
@@ -2035,17 +2127,20 @@ ul.content-hr {
     text-align: left;
     color: #000;
 }
+
 .lost-dog-list-left input[type='range'] {
     -webkit-appearance: none;
     background-color: #bfe0fb;
     overflow: hidden;
     width: 100%;
     border-radius: 30px;
-}  
+}
+
 .lost-dog-list-left input[type='range']::-webkit-slider-runnable-track {
     -webkit-appearance: none;
     height: 14px;
-}  
+}
+
 .lost-dog-list-left input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none;
     background: #0082f0;
@@ -2055,7 +2150,8 @@ ul.content-hr {
     height: 14px;
     width: 14px;
     border: 0;
-}  
+}
+
 .lost-dog-list-left input[type='range']::-moz-range-thumb {
     background: #333;
     border-radius: 50%;
@@ -2064,28 +2160,35 @@ ul.content-hr {
     height: 14px;
     width: 14px;
     border: 0;
-}  
+}
+
 .lost-dog-list-left input[type="range"]::-moz-range-track {
     background-color: #ddd;
 }
+
 .lost-dog-list-left input[type="range"]::-moz-range-progress {
     background-color: #666;
     height: 14px
 }
+
 .lost-dog-list-left input[type="range"]::-ms-fill-upper {
     background-color: #ddd;
 }
+
 .lost-dog-list-left input[type="range"]::-ms-fill-lower {
     background-color: #4fa6ef;
 }
+
 .lost-dog-list-right {
     width: 100%;
     padding: 0 0 0 50px;
     overflow: hidden;
 }
+
 .lost-dog-list-right img {
     border-radius: 10px;
 }
+
 .lost-dog-list-right h4 {
     padding: 15px 0 0 0;
     margin: 0;
@@ -2095,14 +2198,17 @@ ul.content-hr {
     text-align: left;
     color: #032763;
 }
+
 .lost-dog-list-right h4 a {
     text-decoration: none;
     color: #032763;
 }
+
 .lost-dog-list-right h4 a:hover {
     text-decoration: none;
     color: #032763;
 }
+
 .lost-dog-list-right p {
     padding: 5px 0 0 0;
     margin: 0;
@@ -2114,11 +2220,13 @@ ul.content-hr {
     text-align: left;
     color: #5e656f;
 }
+
 .lost-dog-list-right ul {
     margin: 0;
     padding: 0;
     display: inline-block;
 }
+
 .lost-dog-list-right ul li {
     margin: 0 0 0 30px;
     padding: 0;
@@ -2129,15 +2237,18 @@ ul.content-hr {
     text-align: left;
     color: #5e656f;
 }
+
 .lost-dog-list-right ul li::marker {
     font-size: 25px;
     color: #b9dbf8;
 }
+
 .lost-dog-list-right-text {
     width: 100%;
     padding: 15px 5px;
     overflow: hidden;
 }
+
 .dog-pagination {
     width: 100%;
     padding: 40px 0;
@@ -2146,17 +2257,20 @@ ul.content-hr {
     text-align: center;
     border-top: 2px solid #f1f2f2;
 }
+
 .dog-pagination ul {
     width: 100%;
     padding: 0;
     margin: 0;
     display: block;
 }
+
 .dog-pagination ul li {
     padding: 0 5px;
     margin: 0;
     display: inline-block;
 }
+
 .dog-pagination ul li a {
     line-height: 22px;
     font-family: 'nunito_sansbold';
@@ -2164,11 +2278,19 @@ ul.content-hr {
     color: #032763;
     border: 0;
 }
+
 /* ====================
     Media Query 
 ==================== */
 
 @media only screen and (max-width: 1440px) {
+
+    .header-bot {
+        padding: 10px 0;
+    }
+    .main-menu ul li a {
+        font-size: 15px;
+    }
     .banner {
         padding: 65px 0 70px 0;
     }
@@ -2192,6 +2314,9 @@ ul.content-hr {
 
 
 @media only screen and (max-width: 1366px) {
+    .welcome {
+        width: 100%;
+    }
     .banner-text {
         bottom: 20px;
     }
@@ -2226,6 +2351,12 @@ ul.content-hr {
 }
 
 @media only screen and (max-width: 1280px) {
+    .header-bot {
+        padding: 18px 0;
+    }
+    .main-menu ul li a {
+        font-size: 14px;
+    }
     .banner-text {
         bottom: 20px;
     }
@@ -2234,6 +2365,9 @@ ul.content-hr {
         margin-bottom: 15px;
         line-height: 60px;
         font-size: 50px;
+    }
+    .welcome {
+        width: 100%;
     }
 
     .page-content {
@@ -2332,8 +2466,8 @@ ul.content-hr {
     }
 
     .challenge {
-        padding: 50px 0;
-        margin: 40px 0;
+        padding: 30px 10px;
+        margin: 0;
     }
 
     .challenge h4 {
@@ -2346,6 +2480,16 @@ ul.content-hr {
         line-height: 56px;
         font-size: 35px;
         font-weight: 700;
+    }
+
+    .challenge p {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .challenge-box {
+        padding: 20px 10px;
+        min-height: 350px;
     }
 
     .challenge-content {
@@ -2445,12 +2589,23 @@ ul.content-hr {
     .lost-detail-content {
         padding: 30px 0 50px 0;
     }
+
     .lost-dog-list-right {
         padding: 0;
     }
 
     .footer-top {
         padding: 40px 0;
+    }
+
+    .footer-top-text ul li {
+        padding: 20px 12px;
+    }
+
+    .footer-top-text ul li:nth-child(3) a {
+        padding: 12px 50px;
+        font-size: 20px;
+        line-height: 24px;
     }
 
     .footer-text p {
@@ -2519,7 +2674,7 @@ ul.content-hr {
         padding-left: 0;
         font-size: 20px;
     }
-    
+
     .step-page {
         padding: 30px 0;
     }
@@ -2528,6 +2683,7 @@ ul.content-hr {
         padding: 15px 10px 0 40px;
         background: url(../images/icon-female.png) no-repeat 5px 10px;
     }
+
     .step-page .btn-male {
         padding: 17px 10px 10px 45px;
     }
@@ -2543,7 +2699,7 @@ ul.content-hr {
 
     .lost-detail-right h6 {
         background: url(../images/icon-listing.png) no-repeat 20% 18px;
-    }    
+    }
 
     .step-page label {
         line-height: 20px;
@@ -2589,7 +2745,7 @@ ul.content-hr {
     }
 
     .footer-top-text ul li {
-        padding: 20px 12px;
+        padding: 15px 12px;
     }
 
     .footer-top-text ul li:nth-child(2) {
@@ -2669,8 +2825,21 @@ ul.content-hr {
         font-size: 30px;
     }
 
+    .challenge p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
     .challenge-box {
-        padding-bottom: 40px;
+        padding: 30px 20px;
+        margin-bottom: 20px;
+        min-height: auto;
+    }
+
+    .challenge-box ul li {
+        margin: 0 0 10px 0;
+        line-height: 25px;
+        font-size: 20px;
     }
 
     .signup-form {
@@ -2785,13 +2954,14 @@ ul.content-hr {
 
 }
 
-.select2-container .select2-selection--single{
-    height:41px !important;
+.select2-container .select2-selection--single {
+    height: 41px !important;
 }
-.select2-container--default .select2-selection--single{
+
+.select2-container--default .select2-selection--single {
     border-top: 1px solid #e6e6e6;
     border-right: 0 !important;
     border-bottom: 0 !important;
     border-left: 0 !important;
-    border-radius: 0 !important; 
+    border-radius: 0 !important;
 }
