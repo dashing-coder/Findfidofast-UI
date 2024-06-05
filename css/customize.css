@@ -519,7 +519,7 @@ ul.content-hr {
     /*margin: 60px 0;*/
     overflow: hidden;
     text-align: center;
-    background: #f2f9fe;    
+    background: #f2f9fe;
 
     /* --mask:
     radial-gradient(67.08px at 50% 90px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 51% repeat-x,
@@ -623,6 +623,7 @@ ul.content-hr {
     top: 0;
     left: -100%;
     overflow-y: auto;
+    z-index: 50;
     transition: 0.6s ease;
     transition-property: left;
 }
@@ -992,6 +993,8 @@ ul.content-hr {
 .package-list {
     width: 100%;
     padding: 40px 30px 40px 40px;
+    position: relative;
+    min-height: 760px;
     overflow: hidden;
     border-radius: 10px;
     border: 1px solid #e4e6ea;
@@ -1049,16 +1052,13 @@ ul.content-hr {
 }
 
 .package-list ul li {
-    padding: 5px 0 0 0;
+    padding: 5px 0 0 25px;
     line-height: 26px;
     font-family: 'nunito_sansregular';
     font-size: 18px;
     list-style: none;
     color: #4d4e50;
-}
-
-.free-package {
-    min-height: 245px;
+    background: url(../images/bullet-plan.jpg) no-repeat left center;
 }
 
 .btn-plan {
@@ -1086,6 +1086,25 @@ ul.content-hr {
 .btn-plan a:hover {
     text-decoration: none;
 }
+
+.package-list .ribbon {
+    width: 200px;
+    height: 50px;
+    font-family: 'nunito_sansextrabold';
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 2px 3px rgba(136, 136, 136, 0.25);
+    background: #00c0ff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -50px;
+    top: 25px;
+    padding-top: 20px;
+}
+
 
 /* ====================
     Step Page
@@ -2288,9 +2307,11 @@ ul.content-hr {
     .header-bot {
         padding: 10px 0;
     }
+
     .main-menu ul li a {
         font-size: 15px;
     }
+
     .banner {
         padding: 65px 0 70px 0;
     }
@@ -2317,6 +2338,7 @@ ul.content-hr {
     .welcome {
         width: 100%;
     }
+
     .banner-text {
         bottom: 20px;
     }
@@ -2334,6 +2356,10 @@ ul.content-hr {
 
     .package-list h4 {
         font-size: 23px;
+    }
+
+    .package-list {
+        min-height: 790px;
     }
 
     .footer-top-text ul li:nth-child(1) {
@@ -2354,9 +2380,11 @@ ul.content-hr {
     .header-bot {
         padding: 18px 0;
     }
+
     .main-menu ul li a {
         font-size: 14px;
     }
+
     .banner-text {
         bottom: 20px;
     }
@@ -2366,6 +2394,7 @@ ul.content-hr {
         line-height: 60px;
         font-size: 50px;
     }
+
     .welcome {
         width: 100%;
     }
@@ -2762,7 +2791,7 @@ ul.content-hr {
     }
 
     .top-menu2 ul li a {
-        padding: 0 10px 0 2px;
+        padding: 0 9px 0 2px;
     }
 
     .top-menu ul li a {
@@ -2840,6 +2869,10 @@ ul.content-hr {
         margin: 0 0 10px 0;
         line-height: 25px;
         font-size: 20px;
+    }
+
+    .package-list {
+        min-height: auto;
     }
 
     .signup-form {
