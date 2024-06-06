@@ -339,7 +339,7 @@ ul {
     width: 100%;
     padding: 140px 0 70px 0;
     background: url("../images/banner01.jpg") no-repeat top center;
-    background-size: auto;
+    background-size: cover;
 }
 
 .banner-text {
@@ -698,7 +698,7 @@ ul.content-hr {
     cursor: pointer;
     border-radius: 10px;
     right: 0;
-    top: 5px;
+    top: 0;
 }
 
 .menu-btn {
@@ -1181,6 +1181,15 @@ ul.content-hr {
     background: url("../images/icon-map.png") no-repeat left center;
 }
 
+.step-page h5 a {
+    text-decoration: underline;
+    color: #0e1a25;
+}
+.step-page h5 a:hover {
+    text-decoration: underline;
+    color: #0e1a25;
+}
+
 .step-page p {
     padding: 15px 0 0 0;
     line-height: 24px;
@@ -1352,18 +1361,18 @@ ul.content-hr {
 .step-page .btn-female,
 .step-page .btn-female:hover {
     padding: 15px 30px 15px 50px;
-    background: url("../images/icon-female.png") no-repeat 10px 12px;
+    background: url("../images/icon-female.png") no-repeat 10px 18px;
 }
 
 .step-page .btn-male,
 .step-page .btn-male:hover {
     padding: 15px 30px 15px 55px;
-    background: url("../images/icon-male.png") no-repeat 10px 14px;
+    background: url("../images/icon-male.png") no-repeat 10px 20px;
 }
 
 .step-page .btn-unknown,
 .step-page .btn-unknown:hover {
-    padding: 15px 30px 15px 45px;
+    padding: 15px 30px 15px 55px;
     background: url("../images/icon-unknown.png") no-repeat 10px 14px;
 }
 
@@ -1372,7 +1381,7 @@ ul.content-hr {
     text-align: left;
     font-size: 16px;
     color: #0282ef;
-    background: #fff url("../images/icon-male-active.png") no-repeat 10px 16px;
+    background: #fff url("../images/icon-male-active.png") no-repeat 10px 18px;
 }
 
 .step-page .btn-outline-secondary:hover,
@@ -2439,6 +2448,7 @@ ul.content-hr {
 
     .menu-btn {
         display: block;
+        top: 5px;
     }
 
     .top-donate {
@@ -2784,6 +2794,10 @@ ul.content-hr {
 }
 
 @media only screen and (max-width: 767px) {
+    .menu-btn {
+        display: block;
+        top: 0;
+    }
 
     .top-menu {
         padding: 0;
