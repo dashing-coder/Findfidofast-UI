@@ -2842,6 +2842,14 @@ ul.content-hr {
         padding: 0;
     }
 
+    .donate-page {
+        padding: 40px 20px;
+    }
+
+    .form-step .donate-page .btn-submit-post {
+        margin: 0 0 30px 0;
+    }
+
     .footer-top {
         padding: 40px 0;
     }
@@ -3113,6 +3121,19 @@ ul.content-hr {
 
     .signInSignUpModal .signup-form label {
         padding: 10px 0 0 0;
+    }
+
+    .donate-page .btn-outline-secondary {
+        padding: 10px 15px;
+        margin: 5px 5px 0 0;
+    }
+
+    .form-step .donate-page .btn-submit-post {
+        margin: 0 0 30px 0;
+    }
+
+    .form-step .donate-page .form-control {
+        margin-top: 20px;
     }
 
     .footer-top-text ul li:nth-child(2) {
