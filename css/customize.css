@@ -1763,9 +1763,9 @@ ul.content-hr {
     border-bottom-left-radius: 5px;
 }
 
-/* ====================
+/* =======================
     Lost Details Page
-==================== */
+======================== */
 .lost-detail-content {
     width: 100%;
     padding: 70px 0 150px 0;
@@ -2306,6 +2306,215 @@ ul.content-hr {
     color: #032763;
     border: 0;
 }
+/* ======================
+        Donate Page
+========================= */
+.donate-page {
+    width: 100%;
+    padding: 40px 0;
+    margin-bottom: 70px;
+    overflow: hidden;
+    text-align: left;
+    border-radius: 10px;
+    background: #f6f7f8;
+}
+.donate-page .btn-outline-secondary {
+    padding: 15px 30px;
+    margin: 5px 15px 0 0;
+    font-family: 'nunito_sansregular';
+    text-align: left;
+    font-size: 16px;
+    color: #0e1a25;
+    border: 3px solid #cfd1d3;
+    background: #fff;
+}
+
+.donate-page .btn-outline-secondary:hover,
+.donate-page .btn-outline-secondary.active {
+    color: #000;
+    border: 3px solid #0081ef;
+    background: #e0ebf3;
+}
+
+.donate-page label {
+    width: 100%;
+    line-height: 30px;
+    font-family: 'nunito_sansbold';
+    font-size: 24px;
+    text-align: left;
+    color: #0e1a25;
+}
+
+.donate-page .label-bot, .donate-page .label-bot-validate {
+    width: 100%;
+    padding: 10px 0 0 0;
+    line-height: 20px;
+    display: block;
+    font-family: 'nunito_sansregular';
+    text-align: left;
+    font-size: 16px;
+    color: #0e1a25;
+}
+
+.donate-page .label-bot-validate {
+    color: #e82432;
+}
+
+.donate-page .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.donate-page .btn-group>.btn {
+    border-radius: 5px !important;
+}
+
+.donate-page .btn-group .btn-check:checked+.btn {
+    font-family: 'nunito_sansregular';
+    text-align: left;
+    font-size: 16px;
+    color: #000;
+    border: 3px solid #0081ef;
+    background: #e0ebf3;
+}
+
+.form-step .donate-page .btn-submit-post {
+    padding: 15px 30px;
+    margin: 0;
+    display: inline-block;
+    text-align: right;
+    line-height: 24px;
+    font-family: 'nunito_sansextrabold';
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 10px;
+    background: #0082f0;
+}
+
+.form-step .donate-page .btn-submit-post:hover {
+    background: #111;
+}
+.donate-page p {
+    padding: 10px 0 15px 0;
+    font-family: 'nunito_sansregular';
+    text-align: left;
+    font-size: 16px;
+    color: #0e1a25;
+}
+.form-step .donate-page .form-control {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    line-height: 22px;
+    font-family: 'nunito_sansregular';
+    font-size: 18px;
+    color: #696c6f;
+    text-align: left;
+    border-radius: 5px;
+    border: 1px solid #d0cccc;
+    background: #fff;
+}
+.form-step .donate-page .form-select {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    line-height: 22px;
+    font-family: 'nunito_sansregular';
+    font-size: 18px;
+    color: #696c6f;
+    text-align: left;
+    border-radius: 5px;
+    border: 1px solid #d0cccc;
+}
+.width100 {
+    width: 100%;
+}
+
+/* =====================
+    Tab Donate Page
+====================== */
+.group::after, .tabBlock-tabs::after {
+    clear: both;
+    content: "";
+    display: table;
+  }    
+  
+  .unstyledList, .tabBlock-tabs {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    border-radius: 100px;
+    background: #0082f0;
+  }
+  
+  .tabBlock {
+    margin: 0 0 2.5rem;
+  }
+  
+  .tabBlock-tab {
+    width: 49%;
+    border-color: #d8d8d8;
+    border-left-style: solid;
+    border-top: solid;
+    border-width: 0;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'nunito_sansregular';
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 0;
+    position: relative;
+    -webkit-transition: 0.1s ease-in-out;
+            transition: 0.1s ease-in-out;
+  }
+  .tabBlock-tab:last-of-type {
+    border-right-style: solid;
+  }
+  .tabBlock-tab::before, .tabBlock-tab::after {
+    content: "";
+    display: block;
+    height: 0;
+    position: absolute;
+    -webkit-transition: 0.1s ease-in-out;
+            transition: 0.1s ease-in-out;
+  }
+  .tabBlock-tab::before {
+    background-color: #b5a8c5;
+    left: -2px;
+    right: -2px;
+    top: -2px;
+  }
+  .tabBlock-tab::after {
+    background-color: transparent;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+  }  
+  .tabBlock-tab.is-active {
+    position: relative;
+    font-size: 18px;
+    color: #0e1a25;
+    z-index: 1;
+    border-radius: 100px;
+    background: #fff;
+  }
+  .tabBlock-tab.is-active::before {
+    background-color: #ffffff;
+  }
+  .tabBlock-tab.is-active::after {
+    background-color: #fff;
+  }
+  
+  .tabBlock-content {
+    padding: 30px 0 0 0;
+  }
+  
+  .tabBlock-pane > :last-child {
+    margin-bottom: 0;
+  }
 
 /* ====================
     Media Query 
