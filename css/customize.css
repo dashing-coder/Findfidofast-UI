@@ -1237,6 +1237,20 @@ ul.content-hr {
     background: #f7f7f7;
 }
 
+.form-step .form-select {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    line-height: 22px;
+    font-family: 'nunito_sansregular';
+    font-size: 18px;
+    color: #696c6f;
+    text-align: left;
+    border-radius: 5px;
+    border: 1px solid #d0cccc;
+    background-color: #f7f7f7;
+}
+
 .form-step .form-location {
     width: 40%;
     margin-top: 25px;
