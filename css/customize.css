@@ -2515,7 +2515,151 @@ ul.content-hr {
   .tabBlock-pane > :last-child {
     margin-bottom: 0;
   }
-
+/* =======================
+    Dashboard Page
+========================= */
+.dashboard-search {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    background: #0082f0;
+}
+.dashboard-search p {
+    line-height: 30px;
+    font-family: 'nunito_sansextrabold';
+    font-size: 18px;
+    color: #fefefe;
+}
+.dashboard-search p a {
+    text-decoration: underline;
+    color: #fefefe;
+}
+.dashboard-search p a:hover {
+    text-decoration: none;
+    color: #fefefe;
+}
+.dashboard-page {
+    width: 100%;
+    padding: 40px 200px 60px 200px;
+    overflow: hidden;
+}
+.dashboard-page h4 {
+    margin: 0 0 40px 0;
+    line-height: 60px;
+    font-family: 'nunito_sansbold';
+    font-size: 50px;
+    text-align: left;
+    color: #101c1d;
+}
+.dashboard-page-left {
+    width: 100%;
+    overflow: hidden;
+}
+.dashboard-page-left h5 {
+    line-height: 30px;
+    font-family: 'nunito_sansbold';
+    font-size: 24px;
+    text-align: left;
+    display: inline-block;
+    color: #000;
+}
+.dashboard-page .add-dog {
+    padding: 5px 30px 4px 30px;
+    float: right;
+    font-family: 'nunito_sansbold';
+    font-size: 18px;
+    color: #0072d2;
+    border-radius: 100px;
+    border: 2px solid #0082f0;
+    background: #fff;
+}
+.dashboard-page .add-dog:hover {
+    color: #fff;
+    border: 2px solid #1C3786;
+    background: #1C3786;
+}
+.dashboard-page-right {
+    width: 100%;
+    padding: 0 100px;
+    overflow: hidden;
+}
+.dashboard-page-right h5 {
+    line-height: 30px;
+    font-family: 'nunito_sansbold';
+    font-size: 24px;
+    text-align: left;
+    color: #000;
+}
+.dashboard-page-right ul {
+    width: 100%;
+    padding: 30px 0 40px 0;
+}
+.dashboard-page-right ul li:last-child {
+    border: none;
+}
+.dashboard-page-right ul li, .dashboard-page-right ul li:nth-child(1){
+    padding: 0 0 15px 30px;
+    margin: 0 0 15px 0;
+    list-style: none;
+    border-bottom: 1px solid #e6e6e6;
+}
+.dashboard-page-right ul li.message {
+    background: url("../images/icon-message.jpg") no-repeat left 0;
+}
+.dashboard-page-right ul li.personal {
+    background: url("../images/icon-personal.jpg") no-repeat left 0;
+}
+.dashboard-page-right ul li.delete {
+    background: url("../images/icon-delete.jpg") no-repeat left 0;
+}
+.dashboard-page-right ul li.payment {
+    background: url("../images/icon-payment.jpg") no-repeat left 0;
+}
+.dashboard-page-right ul li a {
+    line-height: 20px;
+    font-family: 'nunito_sansregular';
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+    color: #484848;
+}
+.dashboard-page-right ul li a:hover {
+    text-decoration: none;
+}
+.dashboard-page .carousel-control-prev-icon {
+    background: url("../images/icon-prev.png") no-repeat;
+}
+.dashboard-page .carousel-control-next-icon {
+    background: url("../images/icon-next.png") no-repeat;
+}
+.dashboard-page .carousel-control-prev {
+    left: 90%;
+}
+.dashboard-page .carousel-control-next {
+    left: 93%;
+}
+.dashboard-page .carousel-caption {
+    left: 18%;
+    color: #fff;
+    text-align: left;
+}
+.dashboard-page .carousel-caption h3 {
+    line-height: 26px;
+    font-family: 'nunito_sansbold';
+    font-size: 18px;
+    color: #000;
+}
+.dashboard-page .carousel-caption p {
+    line-height: 22px;
+    font-family: 'nunito_sansregular';
+    font-size: 14px;
+    color: #484848;
+}
+.dashboard-page .carousel-inner {
+    padding: 30px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e6e6e6;
+}
 /* ====================
     Media Query 
 ==================== */
@@ -2548,6 +2692,9 @@ ul.content-hr {
 
     .free-package {
         min-height: 300px;
+    }
+    .dashboard-page {
+        padding: 40px 10px 60px 10px;
     }
 }
 
@@ -2850,6 +2997,22 @@ ul.content-hr {
         margin: 0 0 30px 0;
     }
 
+    .dashboard-page-right {
+        padding: 0;
+    }
+
+    .dashboard-page .carousel-caption {
+        left: 24%;
+    }
+
+    .dashboard-page .carousel-control-prev {
+        left: 85%;
+    }
+
+    .dashboard-page .carousel-control-next {
+        left: 90%;
+    }
+
     .footer-top {
         padding: 40px 0;
     }
@@ -3134,6 +3297,14 @@ ul.content-hr {
 
     .form-step .donate-page .form-control {
         margin-top: 20px;
+    }
+
+    .dashboard-page .carousel-caption {
+        left: 40%;
+    }
+
+    .dashboard-page .carousel-control-prev {
+        left: 80%;
     }
 
     .footer-top-text ul li:nth-child(2) {
