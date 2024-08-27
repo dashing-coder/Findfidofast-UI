@@ -274,7 +274,7 @@ ul {
     width: 100%;
     padding: 20px 0;
     text-align: center;
-    display: ruby-text;
+    display: inline;
 }
 
 .main-menu ul {
