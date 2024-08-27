@@ -185,6 +185,31 @@ ul {
     text-decoration: none;
 }
 
+.top-menu .dropdown-menu {
+    padding: 10px;
+    top: 19px !important;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background: #0A1D3B;
+}
+
+.top-menu .dropdown-menu li {
+    display: block;
+}
+
+.top-menu .dropdown-menu li a:hover {
+    background: #3085cf;
+}
+
+.top-menu .dropdown-menu li a {
+    padding: 5px 10px;
+    line-height: 24px;
+    font-family: 'nunito_sansregular';
+    font-size: 13px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .top-menu2 {
     width: 100%;
     text-align: right;
@@ -2798,6 +2823,7 @@ ul.content-hr {
     list-style-type: none;
     color: #454c55;
 }
+
 .contact-left ul li a {
     text-decoration: none;
     color: #454c55;
@@ -2807,6 +2833,7 @@ ul.content-hr {
     text-decoration: none;
     color: #454c55;
 }
+
 .contact-left .fa:before {
     color: #0082f0;
 }
@@ -2829,6 +2856,7 @@ ul.content-hr {
     text-transform: uppercase;
     color: #454c55;
 }
+
 .contact-right .form-contact {
     margin-top: 15px;
 }
@@ -3254,6 +3282,12 @@ ul.content-hr {
     }
 }
 
+@media (min-width: 992px) {
+    .main-menu .navbar-expand-lg .navbar-nav .dropdown-menu {
+        top: 44px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
 
     .main-menu ul li a {
@@ -3383,7 +3417,7 @@ ul.content-hr {
     .page-header-text h4 {
         line-height: 40px;
         font-size: 35px;
-    }    
+    }
 
     .footer-top-text ul li {
         padding: 15px 12px;
