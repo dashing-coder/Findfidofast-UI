@@ -2968,6 +2968,9 @@ ul.content-hr {
     .package-list {
         min-height: 790px;
     }
+    .lost-detail-right h6 {
+        background: url(../images/icon-listing.png) no-repeat 35% 16px;
+    }
 
     .footer-top-text ul li:nth-child(1) {
         padding-left: 40px;
@@ -3012,6 +3015,10 @@ ul.content-hr {
 
     .package-list {
         padding: 40px 25px;
+    }
+
+    .lost-detail-right h6 {
+        background: url(../images/icon-listing.png) no-repeat 35% 16px;
     }
 
     .footer-top-text ul li:nth-child(2) {
@@ -3373,7 +3380,7 @@ ul.content-hr {
     }
 
     .lost-detail-right h6 {
-        background: url(../images/icon-listing.png) no-repeat 20% 18px;
+        background: url(../images/icon-listing.png) no-repeat 15% 18px;
     }
 
     .step-page label {
